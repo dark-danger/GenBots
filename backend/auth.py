@@ -12,6 +12,7 @@ SECRET_KEY = os.environ.get('JWT_SECRET_KEY', 'genbots-secret-key-2025')
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_HOURS = 24
 
+
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
 
