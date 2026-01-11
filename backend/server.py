@@ -276,6 +276,7 @@ app.add_middleware(
     allow_origins=[
         "https://genbots.online",
         "https://www.genbots.online",
+        "https://genbots.online",
         "https://gen-bots.vercel.app"
     ],
     allow_credentials=True,
