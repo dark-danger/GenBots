@@ -1,8 +1,29 @@
-import React, { useState } from 'react';
-import { Home, Shield, Thermometer, Lightbulb, Car, Camera, Droplet, Wind } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Home, Shield, Thermometer, Lightbulb, Car, Camera, Droplet, Wind, Loader2 } from 'lucide-react';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
+  const fetchProjects = async () => {
+    try {
+      const response = await axios.get(`${API}/projects`);
+      setProjects(response.data);
+    } catch (error) {
+      console.error('Failed to fetch projects:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const categories = [
     { id: 'all', label: 'All Projects' },
