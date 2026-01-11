@@ -1,14 +1,15 @@
-# GenBots Frontend - React Application
+# GenBots Frontend - Vite + React Application
 
-Modern, dark-themed portfolio website for GenBots IoT Education Company.
+Modern, lightning-fast portfolio website powered by Vite for GenBots IoT Education Company.
 
 ## 🚀 Features
 
+- **Vite Powered**: Ultra-fast HMR and build times
 - **Modern UI**: Dark theme with cyan accent colors
 - **Fully Responsive**: Optimized for mobile, tablet, and desktop
 - **Admin Panel**: Complete authentication and content management
 - **Pages**: Home, About, Programs, Projects, Contact
-- **Tech Stack**: React 19, React Router, TailwindCSS, Shadcn/ui
+- **Tech Stack**: React 19, Vite 6, React Router, TailwindCSS, Shadcn/ui
 
 ## 📋 Prerequisites
 
@@ -33,27 +34,45 @@ yarn install
 
 Create a `.env` file in the root directory:
 ```env
-REACT_APP_BACKEND_URL=http://localhost:8001
+VITE_BACKEND_URL=http://localhost:8001
 ```
 
 For production:
 ```env
-REACT_APP_BACKEND_URL=https://your-backend-domain.com
+VITE_BACKEND_URL=https://your-backend-domain.com
 ```
 
 ## 🎮 Running the Application
 
 **Development Mode:**
 ```bash
-yarn start
+yarn dev
 ```
-Opens on `http://localhost:3000`
+Opens on `http://localhost:3000` with hot reload!
 
 **Production Build:**
 ```bash
 yarn build
 ```
-Creates optimized build in `build/` folder
+Creates optimized build in `dist/` folder
+
+**Preview Production Build:**
+```bash
+yarn preview
+```
+
+## ⚡ Why Vite?
+
+**Benefits over Create React App:**
+- 🚀 **10x faster** dev server startup
+- ⚡ **Instant HMR** (Hot Module Replacement)
+- 📦 **Smaller bundle size** with better tree-shaking
+- 🔧 **Native ES modules** support
+- 🎯 **Modern** and actively maintained
+
+**Performance Comparison:**
+- CRA dev start: ~15-30 seconds
+- Vite dev start: ~1-2 seconds ⚡
 
 ## 📁 Project Structure
 
