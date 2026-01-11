@@ -32,6 +32,7 @@ git push -u origin main
 - Build Command: `yarn build`
 - Output Directory: `build`
 - Install Command: `yarn install`
+- Node Version: `24.x` (automatic from .nvmrc)
 
 **Environment Variables Add Karein:**
 
