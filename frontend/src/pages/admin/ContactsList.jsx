@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useToast } from '../../hooks/use-toast';
 import { Toaster } from '../../components/ui/toaster';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "https://genbots-backend-production.up.railway.app";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "http://genbots-production.up.railway.app";
 const API = `${BACKEND_URL}/api`;
 
 const ContactsList = () => {

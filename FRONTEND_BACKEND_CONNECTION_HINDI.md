@@ -20,7 +20,7 @@
 
 Railway se apna backend URL copy karein:
 ```
-https://genbots-backend-production.up.railway.app
+http://genbots-production.up.railway.app
 ```
 
 ⚠️ **Dhyan se:** `/api/` NAHI lagana! Sirf base URL.
@@ -33,7 +33,7 @@ https://genbots-backend-production.up.railway.app
 
 ```
 Name:  REACT_APP_BACKEND_URL
-Value: https://genbots-backend-production.up.railway.app
+Value: http://genbots-production.up.railway.app
 ```
 
 **Important Settings:**

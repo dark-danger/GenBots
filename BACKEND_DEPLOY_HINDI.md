@@ -91,7 +91,7 @@ PORT=8001
 3. **"Generate Domain"** click karein
 4. Domain milega jaise:
    ```
-   https://genbots-backend-production.up.railway.app
+   http://genbots-production.up.railway.app
    ```
 
 **⚠️ IS URL KO COPY KAR LEIN! Frontend mein use hoga!**
