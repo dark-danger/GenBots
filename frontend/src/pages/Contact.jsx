@@ -59,15 +59,15 @@ const Contact = () => {
       <Toaster />
       
       {/* Hero Section */}
-      <section className="py-20 px-6 border-b border-white/10">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 border-b border-white/10">
         <div className="max-w-7xl mx-auto text-center">
-          <span className="inline-block px-4 py-2 bg-[#00FFD1]/10 border border-[#00FFD1]/30 text-[#00FFD1] text-sm font-semibold tracking-wider mb-6">
+          <span className="inline-block px-3 sm:px-4 py-2 bg-[#00FFD1]/10 border border-[#00FFD1]/30 text-[#00FFD1] text-xs sm:text-sm font-semibold tracking-wider mb-4 sm:mb-6">
             GET IN TOUCH
           </span>
-          <h1 className="text-5xl md:text-6xl font-bold mb-8 leading-tight" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight px-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             Let's Build the <span className="text-[#00FFD1]">Future Together</span>
           </h1>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed px-4">
             Ready to bring cutting-edge IoT and Robotics education to your school? 
             We're here to answer your questions and help you get started.
           </p>
@@ -75,12 +75,12 @@ const Contact = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-24 px-6">
+      <section className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-5 gap-12">
+          <div className="grid lg:grid-cols-5 gap-8 sm:gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-bold mb-8" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                 Contact <span className="text-[#00FFD1]">Information</span>
               </h2>
               
