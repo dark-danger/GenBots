@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
   border: none;
   border-radius: 0px;
-  padding: 16px 32px;
-  font-size: 18px;
+  padding: 14px 28px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -60,6 +60,13 @@ h1, h2, h3, h4, h5, h6 {
   gap: 12px;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.5px;
+}
+
+@media (min-width: 640px) {
+  .btn-primary {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
 }
 
 .btn-primary:hover {
@@ -73,8 +80,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--brand-primary);
   border: 2px solid var(--brand-primary);
   border-radius: 0px;
-  padding: 14px 30px;
-  font-size: 18px;
+  padding: 12px 26px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -84,6 +91,13 @@ h1, h2, h3, h4, h5, h6 {
   gap: 12px;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.5px;
+}
+
+@media (min-width: 640px) {
+  .btn-secondary {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
 }
 
 .btn-secondary:hover {
