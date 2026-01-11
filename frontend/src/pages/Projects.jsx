@@ -32,147 +32,26 @@ const Projects = () => {
     { id: 'ai', label: 'AI Projects' }
   ];
 
-  const projects = [
-    {
-      category: 'iot',
-      title: 'Smart Home Automation',
-      icon: <Home size={40} />,
-      description: 'Complete home automation system with voice control, mobile app, and automated scheduling.',
-      technologies: ['ESP32', 'MQTT', 'Node-RED', 'Alexa Integration'],
-      features: [
-        'Voice-activated light control',
-        'Temperature-based AC automation',
-        'Mobile app remote control',
-        'Energy consumption monitoring'
-      ],
-      students: 'Built by Class 10 students',
-      duration: '6 weeks'
-    },
-    {
-      category: 'iot',
-      title: 'IoT Security System',
-      icon: <Shield size={40} />,
-      description: 'Advanced security system with motion detection, door sensors, and real-time alerts.',
-      technologies: ['Raspberry Pi', 'PIR Sensors', 'Camera Module', 'Telegram Bot'],
-      features: [
-        'Motion detection alerts',
-        'Live camera streaming',
-        'Door/window open detection',
-        'Instant mobile notifications'
-      ],
-      students: 'Built by Class 11 students',
-      duration: '5 weeks'
-    },
-    {
-      category: 'iot',
-      title: 'Smart Plant Monitoring',
-      icon: <Droplet size={40} />,
-      description: 'Automated plant care system that monitors soil moisture, light, and temperature.',
-      technologies: ['Arduino', 'Soil Sensors', 'Water Pump', 'Cloud Dashboard'],
-      features: [
-        'Automatic watering system',
-        'Soil moisture tracking',
-        'Light level optimization',
-        'Growth data analytics'
-      ],
-      students: 'Built by Class 9 students',
-      duration: '4 weeks'
-    },
-    {
-      category: 'iot',
-      title: 'Weather Station',
-      icon: <Wind size={40} />,
-      description: 'Professional weather monitoring station with cloud data logging and predictions.',
-      technologies: ['ESP8266', 'DHT22', 'BMP180', 'ThingSpeak API'],
-      features: [
-        'Temperature & humidity tracking',
-        'Barometric pressure monitoring',
-        'Rain detection',
-        'Historical data analysis'
-      ],
-      students: 'Built by Class 12 students',
-      duration: '5 weeks'
-    },
-    {
-      category: 'robotics',
-      title: 'Line Following Robot',
-      icon: <Car size={40} />,
-      description: 'Autonomous robot that follows black lines using infrared sensors and PID control.',
-      technologies: ['Arduino', 'IR Sensors', 'Motor Driver', 'PID Algorithm'],
-      features: [
-        'Precise line tracking',
-        'Speed optimization',
-        'Obstacle detection',
-        'Competition-ready design'
-      ],
-      students: 'Built by Class 8 students',
-      duration: '4 weeks'
-    },
-    {
-      category: 'robotics',
-      title: 'Obstacle Avoiding Bot',
-      icon: <Car size={40} />,
-      description: 'Smart robot that navigates environments while avoiding obstacles autonomously.',
-      technologies: ['ESP32', 'Ultrasonic Sensors', 'L298N Driver', 'Path Planning'],
-      features: [
-        'Real-time obstacle detection',
-        'Autonomous navigation',
-        'Multi-sensor fusion',
-        'Smart path selection'
-      ],
-      students: 'Built by Class 9 students',
-      duration: '5 weeks'
-    },
-    {
-      category: 'ai',
-      title: 'Face Recognition Security',
-      icon: <Camera size={40} />,
-      description: 'AI-powered security system with face recognition for access control.',
-      technologies: ['Raspberry Pi', 'OpenCV', 'Face Recognition', 'Python'],
-      features: [
-        'Real-time face detection',
-        'Multi-user recognition',
-        'Access logging',
-        'Alert system'
-      ],
-      students: 'Built by Class 11 students',
-      duration: '7 weeks'
-    },
-    {
-      category: 'ai',
-      title: 'Voice-Controlled Room',
-      icon: <Lightbulb size={40} />,
-      description: 'Smart room automation using voice commands and natural language processing.',
-      technologies: ['Raspberry Pi', 'Speech Recognition', 'NLP', 'Home Assistant'],
-      features: [
-        'Natural voice commands',
-        'Multi-language support',
-        'Device control',
-        'Custom routines'
-      ],
-      students: 'Built by Class 12 students',
-      duration: '6 weeks'
-    },
-    {
-      category: 'iot',
-      title: 'Smart Temperature Control',
-      icon: <Thermometer size={40} />,
-      description: 'Automated temperature management system for homes and greenhouses.',
-      technologies: ['ESP32', 'DS18B20', 'Relay Module', 'Web Dashboard'],
-      features: [
-        'Multi-zone monitoring',
-        'Automated fan control',
-        'Temperature logging',
-        'Alert notifications'
-      ],
-      students: 'Built by Class 10 students',
-      duration: '4 weeks'
+  const getIconForCategory = (category) => {
+    switch(category) {
+      case 'iot': return <Home size={40} />;
+      case 'robotics': return <Car size={40} />;
+      case 'ai': return <Camera size={40} />;
+      default: return <Lightbulb size={40} />;
     }
-  ];
+  };
 
   const filteredProjects = activeCategory === 'all' 
     ? projects 
     : projects.filter(p => p.category === activeCategory);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center pt-24">
+        <Loader2 size={48} className="text-[#00FFD1] animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <div className="bg-black text-white pt-24">
