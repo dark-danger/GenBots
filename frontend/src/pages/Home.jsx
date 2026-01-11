@@ -62,39 +62,39 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden grid-pattern">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 text-center">
-          <div className="mb-8">
-            <span className="inline-block px-4 py-2 bg-[#00FFD1]/10 border border-[#00FFD1]/30 text-[#00FFD1] text-sm font-semibold tracking-wider mb-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 sm:py-32 text-center">
+          <div className="mb-6 sm:mb-8">
+            <span className="inline-block px-3 sm:px-4 py-2 bg-[#00FFD1]/10 border border-[#00FFD1]/30 text-[#00FFD1] text-xs sm:text-sm font-semibold tracking-wider mb-4 sm:mb-6">
               INNOVATE • LEARN • CREATE
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             Building Future <br />
             <span className="text-[#00FFD1] glow-text">Innovators</span> with <br />
             IoT, Robotics & AI
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
             Empowering students with hands-on education in cutting-edge technology. 
             From smart homes to autonomous drones, we make innovation accessible.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link to="/programs" className="btn-primary">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
+            <Link to="/programs" className="btn-primary w-full sm:w-auto justify-center">
               Explore Programs
               <ArrowRight size={20} />
             </Link>
-            <Link to="/contact" className="btn-secondary">
+            <Link to="/contact" className="btn-secondary w-full sm:w-auto justify-center">
               Partner With Us
             </Link>
           </div>
         </div>
 
         {/* Floating elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 border border-[#00FFD1]/30 float-animation" style={{ animationDelay: '0s' }}></div>
-        <div className="absolute bottom-40 right-20 w-16 h-16 border border-[#00FFD1]/30 float-animation" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 right-10 w-12 h-12 bg-[#00FFD1]/10 float-animation" style={{ animationDelay: '2s' }}></div>
+        <div className="hidden md:block absolute top-20 left-10 w-20 h-20 border border-[#00FFD1]/30 float-animation" style={{ animationDelay: '0s' }}></div>
+        <div className="hidden md:block absolute bottom-40 right-20 w-16 h-16 border border-[#00FFD1]/30 float-animation" style={{ animationDelay: '1s' }}></div>
+        <div className="hidden md:block absolute top-1/2 right-10 w-12 h-12 bg-[#00FFD1]/10 float-animation" style={{ animationDelay: '2s' }}></div>
       </section>
 
       {/* Features Section */}
