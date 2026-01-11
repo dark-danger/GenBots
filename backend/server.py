@@ -279,7 +279,13 @@ app.add_middleware(
         "https://gen-bots.vercel.app"
     ],
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=[
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "PATCH"
+    ],
     allow_headers=["*"],
 )
 
