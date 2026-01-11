@@ -12,7 +12,7 @@ Modern, dark-themed portfolio website for GenBots IoT Education Company.
 
 ## 📋 Prerequisites
 
-- Node.js 16+ 
+- Node.js 24+ (LTS recommended)
 - Yarn package manager
 - Backend API running (see backend project)
 
