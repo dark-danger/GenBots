@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, School, User, MessageSquare } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
 import { Toaster } from '../components/ui/toaster';
+import axios from 'axios';
 
 const Contact = () => {
   const { toast } = useToast();
