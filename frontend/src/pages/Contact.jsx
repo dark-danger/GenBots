@@ -267,16 +267,16 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-24 px-6 bg-gradient-to-b from-black to-[#0a0a0a] border-t border-white/10">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black to-[#0a0a0a] border-t border-white/10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
               Find Us on the <span className="text-[#00FFD1]">Map</span>
             </h2>
           </div>
           
-          <div className="bg-white/5 border border-white/10 h-96 flex items-center justify-center">
-            <p className="text-white/50 text-lg">
+          <div className="bg-white/5 border border-white/10 h-64 sm:h-80 md:h-96 flex items-center justify-center">
+            <p className="text-white/50 text-sm sm:text-base md:text-lg px-4 text-center">
               [Map Integration - Google Maps or Similar]
             </p>
           </div>
