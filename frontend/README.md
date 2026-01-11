@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+# GenBots Frontend - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern, dark-themed portfolio website for GenBots IoT Education Company.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Modern UI**: Dark theme with cyan accent colors
+- **Fully Responsive**: Optimized for mobile, tablet, and desktop
+- **Admin Panel**: Complete authentication and content management
+- **Pages**: Home, About, Programs, Projects, Contact
+- **Tech Stack**: React 19, React Router, TailwindCSS, Shadcn/ui
 
-### `npm start`
+## 📋 Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js 16+ 
+- Yarn package manager
+- Backend API running (see backend project)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Installation
 
-### `npm test`
+1. **Clone the repository**
+```bash
+git clone <your-frontend-repo>
+cd frontend
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**
+```bash
+yarn install
+```
 
-### `npm run build`
+3. **Configure environment variables**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a `.env` file in the root directory:
+```env
+REACT_APP_BACKEND_URL=http://localhost:8001
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For production:
+```env
+REACT_APP_BACKEND_URL=https://your-backend-domain.com
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎮 Running the Application
 
-### `npm run eject`
+**Development Mode:**
+```bash
+yarn start
+```
+Opens on `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Production Build:**
+```bash
+yarn build
+```
+Creates optimized build in `build/` folder
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+frontend/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── ui/           # Shadcn components
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Programs.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Contact.jsx
+│   │   └── admin/        # Admin panel pages
+│   ├── context/
+│   │   └── AuthContext.jsx
+│   ├── hooks/
+│   │   └── use-toast.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── .env
+├── package.json
+└── README.md
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔑 Admin Panel Access
 
-## Learn More
+Access admin panel at: `http://localhost:3000/admin/login`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Login Credentials:**
+- Email: khannayash394@gmail.com
+- Password: 9996171216
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Admin Features:**
+- Add/Edit/Delete Projects with image uploads
+- View contact form submissions
+- Mark contacts as contacted/pending
 
-### Code Splitting
+## 🎨 Design System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Colors:**
+- Primary Background: `#000000` (Black)
+- Secondary Background: `#0a0a0a`
+- Accent: `#00FFD1` (Cyan)
+- Text: `#FFFFFF` (White)
 
-### Analyzing the Bundle Size
+**Typography:**
+- Headings: Orbitron (Google Fonts)
+- Body: Rajdhani (Google Fonts)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Components:**
+- Shadcn/ui components in `src/components/ui/`
+- Custom buttons with sharp edges (border-radius: 0)
+- Responsive grid layouts
 
-### Making a Progressive Web App
+## 📱 Responsive Breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Mobile: < 640px
+- Tablet: 640px - 1024px
+- Desktop: > 1024px
 
-### Advanced Configuration
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Netlify
+```bash
+yarn build
+# Deploy the build/ folder to Netlify
+```
 
-### Deployment
+### Vercel
+```bash
+vercel --prod
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Traditional Hosting
+```bash
+yarn build
+# Upload build/ folder to your hosting
+```
 
-### `npm run build` fails to minify
+**Important:** Set environment variable `REACT_APP_BACKEND_URL` in your hosting platform.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🔗 API Integration
+
+All API calls use `process.env.REACT_APP_BACKEND_URL` as base URL.
+
+**Endpoints used:**
+- `GET /api/projects` - Fetch all projects
+- `POST /api/contact` - Submit contact form
+- `POST /api/admin/login` - Admin login
+- `GET /api/admin/contacts` - Get contact submissions
+- `POST /api/admin/projects` - Create project
+- `PUT /api/admin/projects/:id` - Update project
+- `DELETE /api/admin/projects/:id` - Delete project
+
+## 📞 Contact Information
+
+**GenBots**
+- Email: khannayash394@gmail.com
+- Phone: +91 92110 67540
+- Address: TDI Espaniya Royal, Murthal, Sonipat
+
+## 📄 License
+
+All rights reserved © 2025 GenBots
