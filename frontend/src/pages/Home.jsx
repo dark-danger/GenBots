@@ -98,30 +98,30 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 px-6">
+      <section className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
               What We <span className="text-[#00FFD1]">Teach</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto px-4">
               Comprehensive programs designed to transform students into tech innovators
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white/5 border border-white/10 p-8 hover:border-[#00FFD1]/50 hover:bg-white/10 transition-all duration-300 group"
+                className="bg-white/5 border border-white/10 p-6 sm:p-8 hover:border-[#00FFD1]/50 hover:bg-white/10 transition-all duration-300 group"
               >
-                <div className="text-[#00FFD1] mb-6 group-hover:scale-110 transition-transform">
+                <div className="text-[#00FFD1] mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                   {feature.title}
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-white/70 leading-relaxed text-sm sm:text-base">
                   {feature.description}
                 </p>
               </div>
@@ -131,15 +131,15 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 px-6 bg-gradient-to-b from-black to-[#0a0a0a]">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-black to-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-5xl md:text-6xl font-bold text-[#00FFD1] mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#00FFD1] mb-2 sm:mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                   {stat.number}
                 </div>
-                <div className="text-lg text-white/70">
+                <div className="text-sm sm:text-base lg:text-lg text-white/70">
                   {stat.label}
                 </div>
               </div>
@@ -149,31 +149,31 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-6">
+      <section className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
               Why Choose <span className="text-[#00FFD1]">GenBots</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto px-4">
               We combine affordability, quality education, and real-world application
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {whyChoose.map((item, index) => (
               <div
                 key={index}
-                className="flex gap-6 bg-white/5 border border-white/10 p-8 hover:border-[#00FFD1]/50 transition-all"
+                className="flex gap-4 sm:gap-6 bg-white/5 border border-white/10 p-6 sm:p-8 hover:border-[#00FFD1]/50 transition-all"
               >
                 <div className="text-[#00FFD1] flex-shrink-0">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                     {item.title}
                   </h3>
-                  <p className="text-white/70 leading-relaxed text-lg">
+                  <p className="text-white/70 leading-relaxed text-base sm:text-lg">
                     {item.description}
                   </p>
                 </div>
@@ -184,20 +184,20 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6 bg-gradient-to-r from-[#00FFD1]/10 to-[#00D4AD]/10 border-y border-[#00FFD1]/20">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-[#00FFD1]/10 to-[#00D4AD]/10 border-y border-[#00FFD1]/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6" style={{ fontFamily: 'Orbitron, sans-serif' }}>
             Ready to Transform Your School?
           </h2>
-          <p className="text-xl text-white/80 mb-10 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 sm:mb-10 leading-relaxed px-4">
             Join 50+ schools already building the next generation of tech innovators
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/contact" className="btn-primary text-lg px-10">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4">
+            <Link to="/contact" className="btn-primary text-base sm:text-lg px-8 sm:px-10 justify-center">
               Schedule a Demo
               <ArrowRight size={22} />
             </Link>
-            <Link to="/programs" className="btn-secondary text-lg px-10">
+            <Link to="/programs" className="btn-secondary text-base sm:text-lg px-8 sm:px-10 justify-center">
               View Programs
             </Link>
           </div>
