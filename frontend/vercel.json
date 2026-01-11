@@ -1,13 +1,8 @@
 {
-  "version": 2,
   "buildCommand": "yarn build",
-  "framework": "create-react-app",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "installCommand": "yarn install",
-  "build": {
-    "env": {
-      "NODE_VERSION": "24"
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
