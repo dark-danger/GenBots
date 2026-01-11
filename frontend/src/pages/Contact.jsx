@@ -91,8 +91,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold mb-2" style={{ fontFamily: 'Orbitron, sans-serif' }}>Email Us</h3>
-                    <p className="text-white/70">contact@genbots.edu</p>
-                    <p className="text-white/70">partnerships@genbots.edu</p>
+                    <p className="text-white/70">khannayash394@gmail.com</p>
                   </div>
                 </div>
 
@@ -102,7 +101,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold mb-2" style={{ fontFamily: 'Orbitron, sans-serif' }}>Call Us</h3>
-                    <p className="text-white/70">+91 98765 43210</p>
+                    <p className="text-white/70">+91 92110 67540</p>
                     <p className="text-white/70">Mon-Sat: 9:00 AM - 6:00 PM IST</p>
                   </div>
                 </div>
@@ -114,9 +113,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-bold mb-2" style={{ fontFamily: 'Orbitron, sans-serif' }}>Visit Us</h3>
                     <p className="text-white/70">
-                      Innovation Hub, Tech Park<br />
-                      Whitefield, Bangalore - 560066<br />
-                      Karnataka, India
+                      TDI Espaniya Royal<br />
+                      Murthal, Sonipat<br />
+                      Haryana, India
                     </p>
                   </div>
                 </div>
