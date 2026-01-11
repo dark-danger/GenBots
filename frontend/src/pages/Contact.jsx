@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+      const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "https://genbots-backend-production.up.railway.app" ?? "https://genbots-backend-production.up.railway.app";
       const API = `${BACKEND_URL}/api`;
       
       await axios.post(`${API}/contact`, formData);
