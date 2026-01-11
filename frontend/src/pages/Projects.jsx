@@ -99,13 +99,21 @@ const Projects = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
               <div
-                key={index}
+                key={project.id || index}
                 className="bg-white/5 border border-white/10 hover:border-[#00FFD1]/50 transition-all group"
               >
                 <div className="p-8">
-                  <div className="text-[#00FFD1] mb-6 group-hover:scale-110 transition-transform">
-                    {project.icon}
-                  </div>
+                  {project.images && project.images.length > 0 ? (
+                    <img 
+                      src={`${BACKEND_URL}${project.images[0]}`}
+                      alt={project.title}
+                      className="w-full h-48 object-cover mb-6 border border-white/10"
+                    />
+                  ) : (
+                    <div className="text-[#00FFD1] mb-6 group-hover:scale-110 transition-transform">
+                      {getIconForCategory(project.category)}
+                    </div>
+                  )}
                   
                   <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                     {project.title}
@@ -150,6 +158,12 @@ const Projects = () => {
               </div>
             ))}
           </div>
+
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-20">
+              <p className="text-white/50 text-xl">No projects found in this category.</p>
+            </div>
+          )}
         </div>
       </section>
 
