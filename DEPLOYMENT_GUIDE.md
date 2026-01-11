@@ -80,7 +80,7 @@ git push -u origin main
    ```
 5. Deploy hone ka wait karein (5-7 minutes)
 6. **Settings** > **Networking** > **Generate Domain**
-7. **Backend URL copy karein:** `http://genbots-production.up.railway.app`
+7. **Backend URL copy karein:** `https://genbots-production.up.railway.app`
 
 ---
 
@@ -115,7 +115,7 @@ git push -u origin main
 5. **Environment Variables Add karein:**
    ```
    Name: REACT_APP_BACKEND_URL
-   Value: http://genbots-production.up.railway.app
+   Value: https://genbots-production.up.railway.app
    (Railway se copy kiya hua URL)
    ```
 

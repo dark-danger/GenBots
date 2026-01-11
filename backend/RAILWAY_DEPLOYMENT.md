@@ -61,7 +61,7 @@ Railway automatically deploy start karega. 5-7 minutes mein live!
 
 **Your Backend URL:**
 ```
-http://genbots-production.up.railway.app
+https://genbots-production.up.railway.app
 ```
 
 Ye URL apne frontend ke environment variable mein use karein!

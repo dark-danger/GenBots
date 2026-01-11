@@ -27,13 +27,13 @@ Value: <your-railway-backend-url>
 
 **Example Correct URL:**
 ```
-VITE_BACKEND_URL=http://genbots-production.up.railway.app
+VITE_BACKEND_URL=https://genbots-production.up.railway.app
 ```
 
 ❌ **Wrong:**
 ```
-VITE_BACKEND_URL=http://genbots-production.up.railway.app/
-VITE_BACKEND_URL=http://genbots-production.up.railway.app/api
+VITE_BACKEND_URL=https://genbots-production.up.railway.app/
+VITE_BACKEND_URL=https://genbots-production.up.railway.app/api
 ```
 
 ---

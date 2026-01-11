@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Home, Shield, Thermometer, Lightbulb, Car, Camera, Droplet, Wind, Loader2 } from 'lucide-react';
 import axios from 'axios';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "http://genbots-production.up.railway.app";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "https://genbots-production.up.railway.app";
 const API = `${BACKEND_URL}/api`;
 
 const Projects = () => {
