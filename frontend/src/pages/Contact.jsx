@@ -138,81 +138,81 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="lg:col-span-3">
-              <div className="bg-white/5 border border-white/10 p-10">
-                <h2 className="text-3xl font-bold mb-8" style={{ fontFamily: 'Orbitron, sans-serif' }}>
+              <div className="bg-white/5 border border-white/10 p-6 sm:p-10">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8" style={{ fontFamily: 'Orbitron, sans-serif' }}>
                   Send Us a <span className="text-[#00FFD1]">Message</span>
                 </h2>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label className="block text-sm font-semibold mb-3 text-white/90">
+                      <label className="block text-sm font-semibold mb-2 sm:mb-3 text-white/90">
                         Your Name *
                       </label>
                       <div className="relative">
-                        <User size={20} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
+                        <User size={18} className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
                         <input
                           type="text"
                           name="name"
                           value={formData.name}
                           onChange={handleChange}
                           required
-                          className="w-full bg-white/5 border border-white/20 text-white pl-12 pr-4 py-4 focus:outline-none focus:border-[#00FFD1] transition-colors"
+                          className="w-full bg-white/5 border border-white/20 text-white pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:border-[#00FFD1] transition-colors"
                           placeholder="John Doe"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-semibold mb-3 text-white/90">
+                      <label className="block text-sm font-semibold mb-2 sm:mb-3 text-white/90">
                         Email Address *
                       </label>
                       <div className="relative">
-                        <Mail size={20} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
+                        <Mail size={18} className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
                         <input
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
                           required
-                          className="w-full bg-white/5 border border-white/20 text-white pl-12 pr-4 py-4 focus:outline-none focus:border-[#00FFD1] transition-colors"
+                          className="w-full bg-white/5 border border-white/20 text-white pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:border-[#00FFD1] transition-colors"
                           placeholder="john@example.com"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                     <div>
-                      <label className="block text-sm font-semibold mb-3 text-white/90">
+                      <label className="block text-sm font-semibold mb-2 sm:mb-3 text-white/90">
                         Phone Number *
                       </label>
                       <div className="relative">
-                        <Phone size={20} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
+                        <Phone size={18} className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
                         <input
                           type="tel"
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
                           required
-                          className="w-full bg-white/5 border border-white/20 text-white pl-12 pr-4 py-4 focus:outline-none focus:border-[#00FFD1] transition-colors"
+                          className="w-full bg-white/5 border border-white/20 text-white pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:border-[#00FFD1] transition-colors"
                           placeholder="+91 98765 43210"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-sm font-semibold mb-3 text-white/90">
+                      <label className="block text-sm font-semibold mb-2 sm:mb-3 text-white/90">
                         School Name
                       </label>
                       <div className="relative">
-                        <School size={20} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
+                        <School size={18} className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 text-white/50" />
                         <input
                           type="text"
                           name="schoolName"
                           value={formData.schoolName}
                           onChange={handleChange}
-                          className="w-full bg-white/5 border border-white/20 text-white pl-12 pr-4 py-4 focus:outline-none focus:border-[#00FFD1] transition-colors"
+                          className="w-full bg-white/5 border border-white/20 text-white pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:border-[#00FFD1] transition-colors"
                           placeholder="Your School Name"
                         />
                       </div>
@@ -220,14 +220,14 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-3 text-white/90">
+                    <label className="block text-sm font-semibold mb-2 sm:mb-3 text-white/90">
                       Type of Inquiry
                     </label>
                     <select
                       name="inquiry"
                       value={formData.inquiry}
                       onChange={handleChange}
-                      className="w-full bg-white/5 border border-white/20 text-white px-4 py-4 focus:outline-none focus:border-[#00FFD1] transition-colors"
+                      className="w-full bg-white/5 border border-white/20 text-white px-3 sm:px-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:border-[#00FFD1] transition-colors"
                     >
                       <option value="general" className="bg-black">General Inquiry</option>
                       <option value="partnership" className="bg-black">School Partnership</option>
@@ -238,26 +238,26 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-3 text-white/90">
+                    <label className="block text-sm font-semibold mb-2 sm:mb-3 text-white/90">
                       Your Message *
                     </label>
                     <div className="relative">
-                      <MessageSquare size={20} className="absolute left-4 top-6 text-white/50" />
+                      <MessageSquare size={18} className="absolute left-3 sm:left-4 top-4 sm:top-6 text-white/50" />
                       <textarea
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required
                         rows="6"
-                        className="w-full bg-white/5 border border-white/20 text-white pl-12 pr-4 py-4 focus:outline-none focus:border-[#00FFD1] transition-colors resize-none"
+                        className="w-full bg-white/5 border border-white/20 text-white pl-10 sm:pl-12 pr-3 sm:pr-4 py-3 sm:py-4 text-sm sm:text-base focus:outline-none focus:border-[#00FFD1] transition-colors resize-none"
                         placeholder="Tell us about your requirements..."
                       ></textarea>
                     </div>
                   </div>
 
-                  <button type="submit" className="btn-primary w-full justify-center text-lg py-5">
+                  <button type="submit" className="btn-primary w-full justify-center text-base sm:text-lg py-4 sm:py-5">
                     Send Message
-                    <Send size={22} />
+                    <Send size={20} />
                   </button>
                 </form>
               </div>
